@@ -71,6 +71,7 @@ en:
     attributes:
       note:
         note:                 'Note'
+        are you sure to delete: 'Are you sure you want to delete this note? This cannot be undone.'
       project:
         name:                 'Name'
         point_scale:          'Point scale'

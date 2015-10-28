@@ -20,8 +20,10 @@ Fulcrum.NoteView = Backbone.View.extend({
   },
   
   deleteNote: function() {
-  	this.model.destroy();
-  	this.$el.remove();
-  	return false;
+    if (window.confirm(I18n.t('activerecord.attributes.note.are you sure to delete'))) {
+      this.model.destroy();
+      this.$el.remove();
+    }
+    return false;
   }
 });
